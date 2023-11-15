@@ -1,0 +1,31 @@
+<div id="parent">
+    <div id="firstchild">I am the first child</div>
+    <p id="secondchild">I am the second child</p>
+    <h2>I am alive</h2>
+    <h1>Hello world</h1>
+    <p>I am the last child</p>
+</div>
+
+
+<script>
+    let lastElement = document.getElementById("parent").lastElementChild
+    console.log(lastElement)
+
+    let result = document.getElementById("parent").firstElementChild
+    console.log(result)
+
+    result = document.getElementById("parent").children[2]
+    console.log(result)
+
+    // result = document.getElementById("firstchild").nextElementSibling
+    // console.log(result)
+
+    result = document.getElementById("secondchild")
+    console.log(result)
+    console.log(result.previousElementSibling)
+    console.log(result.nextElementSibling)
+    console.log(result.parentElement)
+    console.log(result.parentNode)
+
+    
+</script>

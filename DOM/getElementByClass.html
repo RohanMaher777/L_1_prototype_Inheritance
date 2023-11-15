@@ -1,0 +1,15 @@
+<p class="master">Hey Mahadev</p>
+<p class="master">Hey Shankar</p>
+<h1 class="master">Hey Shambhu</h1>
+
+<button id="btn">click here</button>
+
+<script>
+    let btn = document.getElementById("btn")
+    let elements = document.getElementsByClassName("master")
+    btn.addEventListener("click" , function(){
+        let master = document.getElementsByClassName("master")
+        master[2].innerHTML = "Har har Mahadev"
+    })
+    console.log(elements)
+</script>

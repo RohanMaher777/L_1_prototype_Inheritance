@@ -1,0 +1,15 @@
+<div id="parent">
+    <div id="firstchild">I am the first child</div>
+    <p id="secondchild">I am the second child</p>
+    <h2>I am alive</h2>
+    <h1>Hello world</h1>
+    <p>I am the last child</p>
+</div>
+
+<script>
+    let createElement = document.createElement("div")
+    let innerHtml = (createElement.innerHTML = "I am fullstack developer")
+    let parent = document.getElementById("parent")
+    parent.appendChild(createElement)
+    console.log(parent)
+</script>

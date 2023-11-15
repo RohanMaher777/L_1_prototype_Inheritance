@@ -1,0 +1,15 @@
+<div id="parent">
+    <div id="firstchild">I am the first child</div>
+    <p id="secondchild">I am the second child</p>
+    <h1>I am alive</h1>
+    <h1>Hello world</h1>
+    <p>I am the last child</p>
+</div>
+
+<script>
+    let parent = document.getElementById("parent")
+   
+    let header = document.getElementsByTagName("h1")
+
+    parent.removeChild(header[1])
+</script>

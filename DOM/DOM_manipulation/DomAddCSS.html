@@ -1,0 +1,26 @@
+<style>
+    body {
+        background-color: darkkhaki;
+        display: flex;
+        align-items: center;
+    }
+    .button{
+        background-color: blue;
+        width: 300px;
+        border: none;
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<button id="master">click here</button>
+
+<script>
+    let buttonEle = document.getElementById("master")
+    buttonEle.addEventListener("click" , addFunction)
+    function addFunction(){
+        buttonEle.classList.add("button")
+    }
+</script>
