@@ -1,0 +1,20 @@
+<div id="p2">
+  <div id="p1">
+    <button id="c1">I am a child button</button>
+  </div>
+</div>
+
+<script>
+  let grandParent = document.querySelector("#p2");
+  grandParent.addEventListener("click", function () {
+    console.log("Grand parent is invoked")
+  }, true);// to get the event capturing we need to make callback function "true" 
+  let parent = document.querySelector("#p1");
+  parent.addEventListener("click", function () {
+    console.log("Parent is invoked");
+  });
+  let child = document.querySelector("#c1");
+  child.addEventListener("click", function () {
+    console.log("child is invoked");
+  });
+</script>
